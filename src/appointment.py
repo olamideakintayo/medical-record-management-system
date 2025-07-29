@@ -1,32 +1,35 @@
-from doctor import Doctor
-from patient import Patient
 from datetime import datetime
 
 class Appointment:
 
-    def __init__(self, patient: Patient, doctor: Doctor, appointment_date: datetime, description: str)->None:
-        self.__patient = patient
-        self.__doctor = doctor
+    def __init__(self, patient_id: int, doctor_id: str, appointment_date: datetime):
+        self.__patient_id = patient_id
+        self.__doctor_id = doctor_id
         self.__appointment_date = appointment_date
-        self.__description = description
+        self.__count: int = 0
+        self.__appointment_id = f"Appointment {self.__count}"
 
-        def patient(self):
-            return self.__patient
+    @property
+    def get_appointment_id(self):
+        return self.__appointment_id
 
-        def doctor(self):
-            return self.__doctor
+    @get_appointment_id.setter
+    def get_appointment_id(self, appointment_number: int):
+        self.__count = appointment_number
+        self.__appointment_id = f"Appointment {self.__count}"
 
-        @appointment_date.setter
-        def appointment_date(self, appointment_date):
-            self._appointment_date = appointment_date
+    @property
+    def get_patient_id(self):
+        return self.__patient_id
 
-        def get_appointment_date(self):
-            return self._appointment_date
+    @property
+    def get_doctor_id(self):
+        return self.__doctor_id
 
-        @description.setter
-        def description(self, description):
-            self.__description = description
+    @property
+    def get_appointment_date(self):
+        return self.__appointment_date
 
-        def get_description(self):
-            return self.__description
-
+    def __str__(self):
+        message = (f"Patient ID: {self.__patient_id}\n Doctor ID: {self.__doctor_id}\n Appointment Date: {self.__appointment_date}\n")
+        return message
