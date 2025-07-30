@@ -1,5 +1,5 @@
 from src.entities.appointment import Appointment
-from src.interfaces.appointment_interface import AppointmentRepositoryInterface
+from repositories.appointment_interface import AppointmentRepositoryInterface
 from utils.string_utils import StringUtils
 from datetime import datetime
 

@@ -1,5 +1,5 @@
 from src.config.mongo_connection import db
-from src.repositories.patient_repository import PatientRepository
+from src.repositories.patient_impl import PatientRepository
 from src.entities.patient import Patient
 
 def main():

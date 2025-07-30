@@ -1,5 +1,5 @@
 from src.entities.doctor import Doctor
-from src.interfaces.doctor_interface import DoctorRepositoryInterface
+from repositories.doctor_interface import DoctorRepositoryInterface
 from utils.string_utils import StringUtils
 
 

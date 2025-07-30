@@ -2,7 +2,7 @@ import unittest
 from unittest.mock import MagicMock
 from datetime import datetime
 from src.entities.appointment import Appointment
-from src.repositories.appointment_repository import AppointmentRepository
+from src.repositories.appointment_impl import AppointmentRepository
 
 
 class TestAppointmentRepository(unittest.TestCase):

@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import MagicMock
 from src.entities.doctor import Doctor
-from src.repositories.doctor_repository import DoctorRepository
+from src.repositories.doctor_impl import DoctorRepository
 
 
 class TestDoctorRepository(unittest.TestCase):

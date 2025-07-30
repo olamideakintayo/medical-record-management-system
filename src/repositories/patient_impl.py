@@ -1,5 +1,5 @@
 from src.entities.patient import Patient
-from src.interfaces.patient_interface import PatientRepositoryInterface
+from repositories.patient_interface import PatientRepositoryInterface
 
 
 class PatientRepository(PatientRepositoryInterface):
